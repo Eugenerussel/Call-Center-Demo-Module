@@ -1,0 +1,11 @@
+<div class="nav-tabs">
+  <a (click)="setActiveTab('1')" [ngClass]="{ active: activeTab === '1' }"
+    >Member Dashboard</a
+  >
+  <a (click)="setActiveTab('2')" [ngClass]="{ active: activeTab === '2' }"
+    >Provider Dashboard</a
+  >
+</div>
+
+<!-- Use sanitized URL for iframe -->
+<iframe class="iframe-container" [src]="dashboardUrl"></iframe>
